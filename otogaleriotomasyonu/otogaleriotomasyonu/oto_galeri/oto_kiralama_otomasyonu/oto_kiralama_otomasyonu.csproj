@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8834A8DA-6E0E-4EA1-8E88-422CAC9F0B05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>oto_kiralama_otomasyonu</RootNamespace>
+    <AssemblyName>oto_kiralama_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="arac_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arac_islemleri.Designer.cs">
+      <DependentUpon>arac_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arac_Kiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arac_Kiralama.Designer.cs">
+      <DependentUpon>Arac_Kiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arac_satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arac_satis.Designer.cs">
+      <DependentUpon>arac_satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arac_Teslim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arac_Teslim.Designer.cs">
+      <DependentUpon>arac_Teslim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisform.Designer.cs">
+      <DependentUpon>girisform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri.Designer.cs">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_islemleri.Designer.cs">
+      <DependentUpon>musteri_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_ol.Designer.cs">
+      <DependentUpon>musteri_ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifremi_unuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremi_unuttum.Designer.cs">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="arac_islemleri.resx">
+      <DependentUpon>arac_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arac_Kiralama.resx">
+      <DependentUpon>Arac_Kiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arac_satis.resx">
+      <DependentUpon>arac_satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arac_Teslim.resx">
+      <DependentUpon>arac_Teslim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisform.resx">
+      <DependentUpon>girisform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri.resx">
+      <DependentUpon>musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_islemleri.resx">
+      <DependentUpon>musteri_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_ol.resx">
+      <DependentUpon>musteri_ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sifremi_unuttum.resx">
+      <DependentUpon>sifremi_unuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-keys-run-icon--icon-search-engine-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cool Text - Oto Kiralama Otomasyonu 240837592638826.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-6-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\steps-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif_animasyon01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\track-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeman.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arac_satis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-7-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otogaleripng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
